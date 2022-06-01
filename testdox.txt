@@ -5,4 +5,5 @@ Cpf (Alura\Architecture\Tests\Cpf)
 Phone (Alura\Architecture\Tests\Phone)
  [x] Phone has been a string
  [x] Phone not has been with invalid d d d
+ [x] Phone not has been with invalid number
 

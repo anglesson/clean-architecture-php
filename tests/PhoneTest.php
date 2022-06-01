@@ -15,8 +15,15 @@ class PhoneTest extends TestCase
 
     public function testPhoneNotHasBeenWithInvalidDDD()
     {
-        $this->expectException(\InvalidArgumentException::class);
+        self::expectException(\InvalidArgumentException::class);
         self::expectDeprecationMessage('DDD is invalid');
         new Phone('ddd', '123456789');
+    }
+
+    public function testPhoneNotHasBeenWithInvalidNumber()
+    {
+        self::expectException(\InvalidArgumentException::class);
+        self::expectDeprecationMessage('Phone number is invalid');
+        new Phone('24', 'number');
     }
 }
