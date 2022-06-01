@@ -1,9 +1,9 @@
 <?php
 
-namespace Alura\CleanArchitecture\Application\EnrollStudent;
+namespace Alura\Architecture\Application\EnrollStudent;
 
-use Alura\CleanArchitecture\Domain\Student\Student;
-use Alura\CleanArchitecture\Domain\Student\StudentRepository;
+use Alura\Architecture\Domain\Student\Student;
+use Alura\Architecture\Domain\Student\StudentRepository;
 
 class EnrollStudent
 {

@@ -1,6 +1,6 @@
 <?php
 
-class CryptorMd5 implements \Alura\CleanArchitecture\Domain\Student\Crytor
+class CryptorMd5 implements \Alura\Architecture\Domain\Student\Crytor
 {
 
     public function encrypt(string $password): string

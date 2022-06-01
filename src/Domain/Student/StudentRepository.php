@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\CleanArchitecture\Domain\Student;
+namespace Alura\Architecture\Domain\Student;
 
 interface StudentRepository
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\CleanArchitecture\Domain\Student;
+namespace Alura\Architecture\Domain\Student;
 
 class Cpf
 {
@@ -14,12 +14,12 @@ class Cpf
     {
         $options = [
             'options' => [
-                'regex' => '/\d{3}\.\d{3}\.\d{3}\-\d{2}/'
+                'regexp' => '/\d{3}\.\d{3}\.\d{3}\-\d{2}/'
             ]
         ];
         if ( !filter_var($number, FILTER_VALIDATE_REGEXP, $options) )
         {
-            throw new \http\Exception\InvalidArgumentException('Cpf is invalid');
+            throw new \InvalidArgumentException('Cpf is invalid');
         }
 
         $this->number = $number;

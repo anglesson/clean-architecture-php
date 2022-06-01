@@ -1,0 +1,4 @@
+Cpf (Alura\Architecture\Tests\Cpf)
+ [x] Cpf com formato invalido nao deve existir
+ [x] Cpf deve ser representado como string
+

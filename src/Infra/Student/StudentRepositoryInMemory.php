@@ -1,15 +1,15 @@
 <?php
 
-class StudentRepositoryInMemory implements \Alura\CleanArchitecture\Domain\Student\StudentRepository
+class StudentRepositoryInMemory implements \Alura\Architecture\Domain\Student\StudentRepository
 {
     private array $students = [];
 
-    public function add(\Alura\CleanArchitecture\Domain\Student\Student $student): void
+    public function add(\Alura\Architecture\Domain\Student\Student $student): void
     {
         $this->students[] = $student;
     }
 
-    public function findByCpf(\Alura\CleanArchitecture\Domain\Student\Cpf $cpf): \Alura\CleanArchitecture\Domain\Student\Student
+    public function findByCpf(\Alura\Architecture\Domain\Student\Cpf $cpf): \Alura\Architecture\Domain\Student\Student
     {
         $filteredStudents = array_filter(
             $this->students,
@@ -17,11 +17,11 @@ class StudentRepositoryInMemory implements \Alura\CleanArchitecture\Domain\Stude
         );
 
         if ( count($filteredStudents) === 0) {
-            throw new \Alura\CleanArchitecture\Domain\Student\StudentNotFound('Student not found');
+            throw new \Alura\Architecture\Domain\Student\StudentNotFound('Student not found');
         }
 
         if ( count($filteredStudents) > 1) {
-            throw new \Alura\CleanArchitecture\Domain\Student\StudentNotFound('Fodeu!');
+            throw new \Alura\Architecture\Domain\Student\StudentNotFound('Fodeu!');
         }
 
         return $filteredStudents[0];
