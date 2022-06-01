@@ -9,8 +9,8 @@ class Phone
 
     public function __construct(string $ddd, string $number)
     {
-        $this->number = $number;
-        $this->ddd = $ddd;
+        $this->setDdd($ddd);
+        $this->setNumber($number);
     }
 
     /**
@@ -18,7 +18,7 @@ class Phone
      */
     public function setDdd(string $ddd): void
     {
-        if (preg_match('/\d{2}/') != 1)
+        if (preg_match('/\d{2}/', $ddd) !== 1)
         {
             throw new \InvalidArgumentException('DDD is invalid');
         }

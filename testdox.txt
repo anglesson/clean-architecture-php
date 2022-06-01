@@ -2,3 +2,7 @@ Cpf (Alura\Architecture\Tests\Cpf)
  [x] Cpf com formato invalido nao deve existir
  [x] Cpf deve ser representado como string
 
+Phone (Alura\Architecture\Tests\Phone)
+ [x] Phone has been a string
+ [x] Phone not has been with invalid d d d
+

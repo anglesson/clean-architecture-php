@@ -7,7 +7,7 @@ class Student
     private Cpf $cpf;
     private string $name;
     private Email $email;
-    private array $phones;
+    private Phone $phones;
 
     public function __construct(Cpf $cpf, string $name, Email $email)
     {
