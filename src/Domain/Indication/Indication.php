@@ -2,6 +2,8 @@
 
 namespace Alura\Architecture\Domain\Indication;
 
+use Alura\Architecture\Domain\Student\Student;
+
 class Indication
 {
     private Student $indicator;
