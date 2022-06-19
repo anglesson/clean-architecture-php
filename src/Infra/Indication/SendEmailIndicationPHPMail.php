@@ -8,6 +8,6 @@ class SendEmailIndicationPHPMail implements \Alura\Architecture\Application\Indi
     {
         $subject = "Indication";
         $message = "Congratulations! You're indicated!";
-        mail($studentIndicated->getEmail(), $subject, $message);
+        mail($studentIndicated->email(), $subject, $message);
     }
 }

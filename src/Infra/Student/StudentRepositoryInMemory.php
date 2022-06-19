@@ -1,15 +1,21 @@
 <?php
 
-class StudentRepositoryInMemory implements \Alura\Architecture\Domain\Student\StudentRepository
+namespace Alura\Architecture\Infra\Student;
+
+use Alura\Architecture\Domain\Student\Cpf;
+use Alura\Architecture\Domain\Student\Student;
+use Alura\Architecture\Domain\Student\StudentRepository;
+
+class StudentRepositoryInMemory implements StudentRepository
 {
     private array $students = [];
 
-    public function add(\Alura\Architecture\Domain\Student\Student $student): void
+    public function add(Student $student): void
     {
         $this->students[] = $student;
     }
 
-    public function findByCpf(\Alura\Architecture\Domain\Student\Cpf $cpf): \Alura\Architecture\Domain\Student\Student
+    public function findByCpf(Cpf $cpf): Student
     {
         $filteredStudents = array_filter(
             $this->students,

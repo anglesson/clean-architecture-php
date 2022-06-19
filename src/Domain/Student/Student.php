@@ -35,13 +35,23 @@ class Student
     /**
      * @return Email
      */
-    public function getEmail(): Email
+    public function email(): Email
     {
         return $this->email;
     }
 
-    public function phones()
+    public function phones(): array
     {
-        return $this->phones();
+        return $this->phones;
+    }
+
+    public function name(): string
+    {
+        return $this->name;
+    }
+
+    public function cpf(): string
+    {
+        return $this->cpf;
     }
 }
