@@ -17,6 +17,4 @@ class Indication
 
         $this->date = new \DateTimeImmutable();
     }
-
-
 }

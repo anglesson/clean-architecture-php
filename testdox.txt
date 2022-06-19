@@ -5,7 +5,7 @@ Cpf (Alura\Architecture\Tests\Cpf)
 Email (Alura\Architecture\Tests\Email)
  [x] Phone has been a string
 
-Phone (Alura\Architecture\Tests\Phone)
+Phone (Alura\Architecture\Tests\Student\Phone)
  [x] Phone has been a string
  [x] Phone not has been with invalid d d d
  [x] Phone not has been with invalid number
