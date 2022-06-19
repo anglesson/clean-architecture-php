@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\Architecture\Tests\Student;
+namespace Alura\Architecture\Domain\Tests\Student;
 
 use Alura\Architecture\Domain\Student\Phone;
 use PHPUnit\Framework\TestCase;

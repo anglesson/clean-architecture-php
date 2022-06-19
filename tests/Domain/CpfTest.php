@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\Architecture\Tests;
+namespace Alura\Architecture\Domain\Tests;
 
 use Alura\Architecture\Domain\Student\Cpf;
 use PHPUnit\Framework\TestCase;

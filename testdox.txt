@@ -1,11 +1,11 @@
-Cpf (Alura\Architecture\Tests\Cpf)
+Cpf (Alura\Architecture\Domain\Tests\Cpf)
  [x] Cpf com formato invalido nao deve existir
  [x] Cpf deve ser representado como string
 
-Email (Alura\Architecture\Tests\Email)
+Email (Alura\Architecture\Domain\Tests\Email)
  [x] Phone has been a string
 
-Phone (Alura\Architecture\Tests\Student\Phone)
+Phone (Alura\Architecture\Domain\Tests\Student\Phone)
  [x] Phone has been a string
  [x] Phone not has been with invalid d d d
  [x] Phone not has been with invalid number
