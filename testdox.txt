@@ -1,5 +1,5 @@
 Enroll Student (Alura\Architecture\Tests\Application\Student\EnrollStudent)
- [ ] Student should be added to repository
+ [x] Student should be added to repository
 
 Cpf (Alura\Architecture\Domain\Tests\Cpf)
  [x] Cpf com formato invalido nao deve existir
