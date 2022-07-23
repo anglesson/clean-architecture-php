@@ -1,10 +1,13 @@
 <?php
 
-namespace Alura\Architecture\Infra\Indication;
+namespace Alura\Architecture\Academic\Infra\Indication;
 
-class SendEmailIndicationPHPMail implements \Alura\Architecture\Application\Indication\SendEmailIndication
+use Alura\Architecture\Academic\Application\Indication\SendEmailIndication;
+use Alura\Architecture\Academic\Domain\Student\Student;
+
+class SendEmailIndicationPHPMail implements SendEmailIndication
 {
-    public function sendTo(\Alura\Architecture\Domain\Student\Student $studentIndicated): void
+    public function sendTo(Student $studentIndicated): void
     {
         $subject = "Indication";
         $message = "Congratulations! You're indicated!";

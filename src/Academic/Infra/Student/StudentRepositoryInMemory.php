@@ -2,9 +2,10 @@
 
 namespace Alura\Architecture\Infra\Student;
 
-use Alura\Architecture\Domain\Student\Cpf;
-use Alura\Architecture\Domain\Student\Student;
-use Alura\Architecture\Domain\Student\StudentRepository;
+use Alura\Architecture\Academic\Domain\Student\Student;
+use Alura\Architecture\Academic\Domain\Student\StudentNotFound;
+use Alura\Architecture\Academic\Domain\Student\StudentRepository;
+use Alura\Architecture\Shared\Domain\Cpf;
 
 class StudentRepositoryInMemory implements StudentRepository
 {
@@ -23,11 +24,11 @@ class StudentRepositoryInMemory implements StudentRepository
         );
 
         if ( count($filteredStudents) === 0) {
-            throw new \Alura\Architecture\Domain\Student\StudentNotFound('Student not found');
+            throw new StudentNotFound('Student not found');
         }
 
         if ( count($filteredStudents) > 1) {
-            throw new \Alura\Architecture\Domain\Student\StudentNotFound('Fodeu!');
+            throw new StudentNotFound('Fodeu!');
         }
 
         return $filteredStudents[0];

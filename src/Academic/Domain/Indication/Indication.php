@@ -1,8 +1,8 @@
 <?php
 
-namespace Alura\Architecture\Domain\Indication;
+namespace Alura\Architecture\Academic\Domain\Indication;
 
-use Alura\Architecture\Domain\Student\Student;
+use Alura\Architecture\Academic\Domain\Student\Student;
 
 class Indication
 {

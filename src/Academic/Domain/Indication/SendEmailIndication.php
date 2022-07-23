@@ -1,8 +1,8 @@
 <?php
 
-namespace Alura\Architecture\Application\Indication;
+namespace Alura\Architecture\Academic\Application\Indication;
 
-use Alura\Architecture\Domain\Student\Student;
+use Alura\Architecture\Academic\Domain\Student\Student;
 
 interface SendEmailIndication
 {

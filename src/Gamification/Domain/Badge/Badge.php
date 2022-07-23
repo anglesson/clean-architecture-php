@@ -1,8 +1,8 @@
 <?php
 
-namespace Alura\Architecture\Domain\Badge;
+namespace Alura\Architecture\Gamification\Domain\Badge;
 
-use Alura\Architecture\Domain\Student\Cpf;
+use Alura\Architecture\Shared\Domain\Cpf;
 
 class Badge
 {

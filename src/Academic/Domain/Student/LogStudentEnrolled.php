@@ -1,9 +1,9 @@
 <?php
 
-namespace Alura\Architecture\Domain\Student;
+namespace Alura\Architecture\Academic\Domain\Student;
 
-use Alura\Architecture\Domain\Event;
-use Alura\Architecture\Domain\EventListener;
+use Alura\Architecture\Academic\Domain\Event;
+use Alura\Architecture\Academic\Domain\EventListener;
 
 class LogStudentEnrolled extends EventListener
 {

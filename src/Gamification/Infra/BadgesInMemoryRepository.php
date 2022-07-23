@@ -2,9 +2,9 @@
 
 namespace Alura\Architecture\Gamification\Infra;
 
-use Alura\Architecture\Domain\Badge\Badge;
-use Alura\Architecture\Domain\Badge\BadgeRepository;
-use Alura\Architecture\Domain\Student\Cpf;
+use Alura\Architecture\Gamification\Domain\Badge\Badge;
+use Alura\Architecture\Gamification\Domain\Badge\BadgeRepository;
+use Alura\Architecture\Shared\Domain\Cpf;
 
 class BadgesInMemoryRepository implements BadgeRepository
 {

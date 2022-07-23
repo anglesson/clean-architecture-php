@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\Architecture\Application\EnrollStudent;
+namespace Alura\Architecture\Academic\Application\EnrollStudent;
 
 class EnrollStudentDTO
 {

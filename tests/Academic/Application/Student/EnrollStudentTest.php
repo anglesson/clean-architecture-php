@@ -2,10 +2,10 @@
 
 namespace Alura\Architecture\Tests\Application\Student;
 
-use Alura\Architecture\Application\EnrollStudent\EnrollStudent;
-use Alura\Architecture\Application\EnrollStudent\EnrollStudentDTO;
-use Alura\Architecture\Domain\Student\Cpf;
+use Alura\Architecture\Academic\Application\EnrollStudent\EnrollStudent;
+use Alura\Architecture\Academic\Application\EnrollStudent\EnrollStudentDTO;
 use Alura\Architecture\Infra\Student\StudentRepositoryInMemory;
+use Alura\Architecture\Shared\Domain\Cpf;
 use PHPUnit\Framework\TestCase;
 
 class EnrollStudentTest extends TestCase

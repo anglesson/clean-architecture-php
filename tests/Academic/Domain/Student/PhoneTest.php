@@ -2,7 +2,7 @@
 
 namespace Alura\Architecture\Domain\Tests\Student;
 
-use Alura\Architecture\Domain\Student\Phone;
+use Alura\Architecture\Academic\Domain\Student\Phone;
 use PHPUnit\Framework\TestCase;
 
 class PhoneTest extends TestCase

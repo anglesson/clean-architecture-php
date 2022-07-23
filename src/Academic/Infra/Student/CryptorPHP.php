@@ -1,6 +1,8 @@
 <?php
 
-class CryptorPHP implements \Alura\Architecture\Domain\Student\Crytor
+use Alura\Architecture\Academic\Domain\Student\Crytor;
+
+class CryptorPHP implements Crytor
 {
 
     public function encrypt(string $password): string

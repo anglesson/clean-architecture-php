@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\Architecture\Domain;
+namespace Alura\Architecture\Academic\Domain;
 
 abstract class EventListener
 {

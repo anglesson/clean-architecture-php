@@ -1,12 +1,11 @@
 <?php
 
-namespace Alura\Architecture\Application\EnrollStudent;
+namespace Alura\Architecture\Academic\Application\EnrollStudent;
 
-use Alura\Architecture\Domain\EventPublisher;
-use Alura\Architecture\Domain\Student\LogStudentEnrolled;
-use Alura\Architecture\Domain\Student\Student;
-use Alura\Architecture\Domain\Student\StudentEnrolled;
-use Alura\Architecture\Domain\Student\StudentRepository;
+use Alura\Architecture\Academic\Domain\EventPublisher;
+use Alura\Architecture\Academic\Domain\Student\Student;
+use Alura\Architecture\Academic\Domain\Student\StudentEnrolled;
+use Alura\Architecture\Academic\Domain\Student\StudentRepository;
 
 class EnrollStudent
 {

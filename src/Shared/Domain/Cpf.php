@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\Architecture\Domain\Student;
+namespace Alura\Architecture\Shared\Domain;
 
 class Cpf
 {
