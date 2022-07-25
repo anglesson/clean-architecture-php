@@ -1,12 +1,12 @@
 <?php
 
-use Alura\Architecture\Application\EnrollStudent\EnrollStudent;
-use Alura\Architecture\Application\EnrollStudent\EnrollStudentDTO;
-use Alura\Architecture\Domain\EventPublisher;
-use Alura\Architecture\Domain\Student\Email;
-use Alura\Architecture\Domain\Student\LogStudentEnrolled;
-use Alura\Architecture\Domain\Student\Student;
+use Alura\Architecture\Academic\Application\EnrollStudent\EnrollStudent;
+use Alura\Architecture\Academic\Application\EnrollStudent\EnrollStudentDTO;
+use Alura\Architecture\Academic\Domain\Student\LogStudentEnrolled;
+use Alura\Architecture\Gamification\Application\GenerateBadgeNewbie;
+use Alura\Architecture\Gamification\Infra\BadgesInMemoryRepository;
 use Alura\Architecture\Infra\Student\StudentRepositoryInMemory;
+use Alura\Architecture\Shared\Domain\Event\EventPublisher;
 
 require 'vendor/autoload.php';
 
@@ -20,5 +20,8 @@ $phone = $argv[5];
 
 $publisher = new EventPublisher();
 $publisher->addListener(new LogStudentEnrolled());
+$publisher->addListener(new GenerateBadgeNewbie(new BadgesInMemoryRepository()));
+
 $useCase = new EnrollStudent(new StudentRepositoryInMemory(), $publisher);
+
 $useCase->handle(new EnrollStudentDTO($name, $cpf, $email));

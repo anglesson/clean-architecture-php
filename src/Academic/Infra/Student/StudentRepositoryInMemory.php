@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\Architecture\Infra\Student;
+namespace Alura\Architecture\Academic\Infra\Student;
 
 use Alura\Architecture\Academic\Domain\Student\Student;
 use Alura\Architecture\Academic\Domain\Student\StudentNotFound;

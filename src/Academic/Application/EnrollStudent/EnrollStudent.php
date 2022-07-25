@@ -2,7 +2,7 @@
 
 namespace Alura\Architecture\Academic\Application\EnrollStudent;
 
-use Alura\Architecture\Academic\Domain\EventPublisher;
+use Alura\Architecture\Shared\Domain\Event\EventPublisher;
 use Alura\Architecture\Academic\Domain\Student\Student;
 use Alura\Architecture\Academic\Domain\Student\StudentEnrolled;
 use Alura\Architecture\Academic\Domain\Student\StudentRepository;

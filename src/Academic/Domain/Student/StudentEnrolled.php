@@ -2,8 +2,8 @@
 
 namespace Alura\Architecture\Academic\Domain\Student;
 
-use Alura\Architecture\Academic\Domain\Event;
 use Alura\Architecture\Shared\Domain\Cpf;
+use Alura\Architecture\Shared\Domain\Event\Event;
 
 class StudentEnrolled implements Event
 {
@@ -24,5 +24,10 @@ class StudentEnrolled implements Event
     public function moment(): \DateTimeImmutable
     {
         return $this->moment;
+    }
+
+    public function jsonSerialize(): array
+    {
+        return get_object_vars($this);
     }
 }

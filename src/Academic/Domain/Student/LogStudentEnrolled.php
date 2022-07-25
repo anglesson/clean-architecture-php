@@ -2,8 +2,8 @@
 
 namespace Alura\Architecture\Academic\Domain\Student;
 
-use Alura\Architecture\Academic\Domain\Event;
-use Alura\Architecture\Academic\Domain\EventListener;
+use Alura\Architecture\Shared\Domain\Event\Event;
+use Alura\Architecture\Shared\Domain\Event\EventListener;
 
 class LogStudentEnrolled extends EventListener
 {
